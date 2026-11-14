@@ -10,6 +10,7 @@ Rocks are not enough? Throw bombs in the air. Bombs explode, and they propel you
 
 ### Controls
 **1** and **2**: Switch between rocks and bombs
+
 **A** and **D**: Left & Right movement
 
 ### Usage
