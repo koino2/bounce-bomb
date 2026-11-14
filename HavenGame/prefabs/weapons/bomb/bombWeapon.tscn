@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c4qsmgdcaa5kk"]
+
+[ext_resource type="Script" uid="uid://dr84ljfdh0xuf" path="res://prefabs/weapons/bomb/bombWeapon.gd" id="1_25h8m"]
+[ext_resource type="PackedScene" uid="uid://digje3d60g3ay" path="res://prefabs/weapons/bomb/bomb.tscn" id="2_oy6x1"]
+
+[node name="BombWeapon" type="Node2D" unique_id=1391151063]
+script = ExtResource("1_25h8m")
+bomb_scene = ExtResource("2_oy6x1")
+recoil_force = 250.0

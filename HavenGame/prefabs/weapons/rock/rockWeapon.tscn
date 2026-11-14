@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://taraxraol67j"]
+
+[ext_resource type="Script" uid="uid://cy1y4oblhplpo" path="res://prefabs/weapons/rock/rockWeapon.gd" id="1_t536j"]
+
+[node name="RockWeapon" type="Node2D" unique_id=1391151063]
+script = ExtResource("1_t536j")

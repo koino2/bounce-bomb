@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://digje3d60g3ay"]
+
+[ext_resource type="Script" uid="uid://0cecf23dvsww" path="res://prefabs/weapons/bomb/bomb.gd" id="1_inmcl"]
+[ext_resource type="Texture2D" uid="uid://nf7a32y45i0x" path="res://assets/sprites/bomb.png" id="2_a02cg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uk52f"]
+radius = 8.0
+
+[node name="Bomb" type="RigidBody2D" unique_id=2011225346]
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_inmcl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214061703]
+shape = SubResource("CircleShape2D_uk52f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1364338480]
+position = Vector2(0, -2.9999998)
+scale = Vector2(0.025, 0.025)
+texture = ExtResource("2_a02cg")

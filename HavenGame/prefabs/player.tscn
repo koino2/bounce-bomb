@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cxbyb3bqh88o0"]
+
+[ext_resource type="Script" uid="uid://cjcbso20w0lb4" path="res://scripts/player.gd" id="1_72ieh"]
+[ext_resource type="Texture2D" uid="uid://dq1qoptb7665v" path="res://assets/m2.png" id="2_1txc5"]
+[ext_resource type="PackedScene" uid="uid://taraxraol67j" path="res://prefabs/weapons/rock/rockWeapon.tscn" id="2_4dohe"]
+[ext_resource type="Script" uid="uid://dlhl5edil0mf1" path="res://scripts/cameraScript.gd" id="3_ht1c8"]
+[ext_resource type="PackedScene" uid="uid://d2dx1cltof7gl" path="res://prefabs/weapons/rock/rock.tscn" id="3_r66lb"]
+[ext_resource type="PackedScene" uid="uid://c4qsmgdcaa5kk" path="res://prefabs/weapons/bomb/bombWeapon.tscn" id="6_g2jcq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrgvy"]
+size = Vector2(16, 16)
+
+[node name="Player" type="CharacterBody2D" unique_id=318352104]
+scale = Vector2(2, 2)
+script = ExtResource("1_72ieh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1576874628]
+shape = SubResource("RectangleShape2D_xrgvy")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=183092186]
+position = Vector2(2.3841858e-07, 2.3841858e-07)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_1txc5")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1940921208]
+script = ExtResource("3_ht1c8")
+
+[node name="RockWeapon" parent="." unique_id=1391151063 instance=ExtResource("2_4dohe")]
+rock_scene = ExtResource("3_r66lb")
+
+[node name="BombWeapon" parent="." unique_id=422253641 instance=ExtResource("6_g2jcq")]

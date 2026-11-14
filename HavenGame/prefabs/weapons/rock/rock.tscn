@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://d2dx1cltof7gl"]
+
+[ext_resource type="Script" uid="uid://cqtyqs673w0e4" path="res://prefabs/weapons/rock/rock.gd" id="1_ei8ch"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uk52f"]
+radius = 8.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uk52f"]
+load_path = "res://.godot/imported/rock.png-bcf52a497742222238feaf1e96d9860c.ctex"
+
+[node name="Rock" type="RigidBody2D" unique_id=2011225346]
+contact_monitor = true
+max_contacts_reported = 4
+script = ExtResource("1_ei8ch")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214061703]
+shape = SubResource("CircleShape2D_uk52f")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1364338480]
+scale = Vector2(0.025, 0.025)
+texture = SubResource("CompressedTexture2D_uk52f")
