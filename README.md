@@ -13,6 +13,8 @@ Rocks are not enough? Throw bombs in the air. Bombs explode, and they propel you
 
 **A** and **D**: Left & Right movement
 
+**Scroll wheel**: Camera Zoom
+
 ### Usage
 Visit https://bbunchi.itch.io/bounce-bomb to play the game.
 
@@ -20,4 +22,4 @@ Alternatively, clone the project and export it yourself using godot.
 
 ---
 
-This game was made in like 5 hours so don't have any high expectations
+This game was made in like 5 hours and this is my first ever godot game so don't have any high expectations
